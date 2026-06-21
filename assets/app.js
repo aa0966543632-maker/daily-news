@@ -74,18 +74,19 @@ function applyFilters(list) {
   );
 }
 
-function cardHTML(item) {
+function cardHTML(item, i = 0) {
   const active = isBookmarked(item.id) ? "active" : "";
   const stale = item._stale
     ? `<span class="stale">· 已不在最新清單</span>` : "";
   const insight = item.insight
-    ? `<div class="insight"><strong>洞察</strong>${esc(item.insight)}</div>` : "";
+    ? `<div class="insight"><strong>Insight</strong>${esc(item.insight)}</div>` : "";
+  const delay = Math.min(i, 12) * 45; // 進場 stagger（上限避免太久）
   return `
-    <article class="card">
+    <article class="card" style="animation-delay:${delay}ms">
       <button class="star-btn ${active}" data-id="${esc(item.id)}" title="收藏" aria-label="收藏">★</button>
       <div class="card-tags">
         <span class="tag cat">${esc(CATEGORY_LABEL[item.category] || item.category)}</span>
-        <span class="tag">${esc(REGION_LABEL[item.region] || item.region)}</span>
+        <span class="tag region">${esc(REGION_LABEL[item.region] || item.region)}</span>
       </div>
       <h2 class="card-title">
         <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a>
@@ -104,7 +105,7 @@ function render() {
   const container = document.getElementById("news-list");
   const empty = document.getElementById("empty-state");
 
-  container.innerHTML = list.map(cardHTML).join("");
+  container.innerHTML = list.map((item, i) => cardHTML(item, i)).join("");
   empty.hidden = list.length > 0;
   document.getElementById("bm-count").textContent = Object.keys(loadBookmarks()).length;
 
