@@ -29,6 +29,7 @@ from sources import FEEDS, MAX_PER_BUCKET
 
 # ───────────────────────── 設定 ─────────────────────────
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+BATCH_SIZE = int(os.environ.get("GEMINI_BATCH_SIZE", "6"))  # 每次請求處理幾篇（壓低 RPM）
 TAIPEI = timezone(timedelta(hours=8))
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -103,29 +104,36 @@ def fetch_entries():
 
 
 # ───────────────────────── Gemini ─────────────────────────
-def build_prompt(item) -> str:
-    return (
-        "你是一位專業的財經與科技新聞編輯。請根據以下新聞，產生繁體中文的摘要與洞察。\n"
-        "規則：\n"
-        "1. summary：2-3 句中立、精簡的繁體中文摘要。\n"
-        "2. insight：一句話的洞察，點出『這對讀者/市場的影響』或『為何值得關注』，"
-        "避免空泛廢話。\n"
-        "3. 只輸出 JSON，格式為 {\"summary\": \"...\", \"insight\": \"...\"}，不要加任何其他文字或 markdown。\n\n"
-        f"分類：{CATEGORY_LABEL.get(item['category'], item['category'])} / "
-        f"{REGION_LABEL.get(item['region'], item['region'])}\n"
-        f"標題：{item['title']}\n"
-        f"原文摘要：{item['raw'] or '（無）'}\n"
-    )
+def build_batch_prompt(batch) -> str:
+    """一次處理多篇：要求模型回傳 JSON 陣列。"""
+    lines = [
+        "你是一位專業的財經與科技新聞編輯。以下有多則新聞，請為「每一則」產生繁體中文的摘要與洞察。",
+        "規則：",
+        "1. summary：2-3 句中立、精簡的繁體中文摘要（英文新聞也務必翻譯成繁體中文）。",
+        "2. insight：一句話的洞察，點出『對讀者/市場的影響』或『為何值得關注』，避免空泛廢話。",
+        "3. 只輸出 JSON 陣列，格式為 "
+        '[{"id": <編號>, "summary": "...", "insight": "..."}, ...]，'
+        "務必涵蓋所有編號，不要輸出任何其他文字或 markdown。",
+        "",
+        "新聞列表：",
+    ]
+    for n, item in enumerate(batch):
+        cat = CATEGORY_LABEL.get(item["category"], item["category"])
+        reg = REGION_LABEL.get(item["region"], item["region"])
+        lines.append(
+            f"[{n}] 分類:{cat}/{reg}｜標題:{item['title']}｜原文:{item['raw'] or '（無）'}"
+        )
+    return "\n".join(lines)
 
 
-def parse_json_response(text: str):
-    """從模型回覆中抽出 JSON 物件。"""
+def parse_json_array(text: str):
+    """從模型回覆中抽出 JSON 陣列。"""
     text = text.strip()
     text = re.sub(r"^```(?:json)?", "", text).strip()
     text = re.sub(r"```$", "", text).strip()
-    match = re.search(r"\{.*\}", text, re.DOTALL)
+    match = re.search(r"\[.*\]", text, re.DOTALL)
     if not match:
-        raise ValueError("no JSON object found")
+        raise ValueError("no JSON array found")
     return json.loads(match.group(0))
 
 
@@ -138,29 +146,44 @@ def enrich_with_gemini(items):
         sys.exit(1)
 
     client = genai.Client(api_key=api_key)
-    total = len(items)
 
-    for i, item in enumerate(items, 1):
-        print(f"[gemini {i}/{total}] {item['title'][:40]} … ", end="", flush=True)
-        summary, insight = item["raw"][:160], ""
-        for attempt in range(3):
+    # 先填 fallback，確保即使某批失敗每篇仍有摘要
+    for item in items:
+        item["summary"] = (item.get("raw") or item["title"])[:160]
+        item["insight"] = ""
+
+    batches = [items[i:i + BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
+    for bi, batch in enumerate(batches, 1):
+        print(f"[gemini 批次 {bi}/{len(batches)}] {len(batch)} 篇 … ", end="", flush=True)
+        for attempt in range(4):
             try:
                 resp = client.models.generate_content(
                     model=MODEL,
-                    contents=build_prompt(item),
+                    contents=build_batch_prompt(batch),
                 )
-                data = parse_json_response(resp.text)
-                summary = clean_text(data.get("summary", "")) or summary
-                insight = clean_text(data.get("insight", ""))
-                print("ok")
+                by_id = {int(x["id"]): x for x in parse_json_array(resp.text) if "id" in x}
+                filled = 0
+                for n, item in enumerate(batch):
+                    data = by_id.get(n)
+                    if not data:
+                        continue
+                    summary = clean_text(data.get("summary", ""))
+                    insight = clean_text(data.get("insight", ""))
+                    if summary:
+                        item["summary"] = summary
+                    item["insight"] = insight
+                    if insight:
+                        filled += 1
+                print(f"ok（{filled}/{len(batch)} 則有 insight）")
                 break
-            except Exception as exc:  # noqa: BLE001 - 重試後仍失敗則用 fallback
-                if attempt == 2:
+            except Exception as exc:  # noqa: BLE001 - 重試後仍失敗則保留 fallback
+                if attempt == 3:
                     print(f"fallback ({exc})")
                 else:
-                    time.sleep(2 * (attempt + 1))
-        item["summary"] = summary
-        item["insight"] = insight
+                    time.sleep(5 * (attempt + 1))  # 5/10/15s backoff，避開每分鐘限額
+        time.sleep(2)  # 批次間稍作間隔，進一步降低 RPM 壓力
+
+    for item in items:
         item.pop("raw", None)
 
     return items
