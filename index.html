@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日時事統整｜金融・AI科技・投資</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>每日時事統整</h1>
+        <p class="tagline">金融 · AI科技 · 投資｜國際 · 台灣</p>
+      </div>
+      <div class="updated" id="updated">載入中…</div>
+    </div>
+
+    <div class="controls">
+      <label>
+        分類
+        <select id="filter-category">
+          <option value="all">全部</option>
+          <option value="finance">金融</option>
+          <option value="ai">AI科技</option>
+          <option value="investment">投資</option>
+        </select>
+      </label>
+
+      <label>
+        地區
+        <select id="filter-region">
+          <option value="all">全部</option>
+          <option value="international">國際</option>
+          <option value="taiwan">台灣</option>
+        </select>
+      </label>
+
+      <div class="view-toggle" id="view-toggle">
+        <button class="toggle-btn active" data-view="all">全部時事</button>
+        <button class="toggle-btn" data-view="bookmarks">★ 我的收藏 <span id="bm-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="news-list" class="news-list">
+    <!-- 卡片由 app.js 渲染 -->
+  </main>
+
+  <p class="empty" id="empty-state" hidden>目前沒有符合條件的時事。</p>
+
+  <footer class="site-footer">
+    <p>內容由 RSS 來源彙整、Gemini 生成摘要與洞察。每則皆附原文連結，請以原始來源為準。</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
