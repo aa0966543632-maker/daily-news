@@ -162,19 +162,32 @@ def enrich_with_gemini(items):
                     model=MODEL,
                     contents=build_batch_prompt(batch),
                 )
-                by_id = {int(x["id"]): x for x in parse_json_array(resp.text) if "id" in x}
+                arr = parse_json_array(resp.text)
+                # 以 id 對應（容忍字串 id）；缺 id 時退而用「順序」對應
+                by_id = {}
+                for x in arr:
+                    if isinstance(x, dict) and "id" in x:
+                        try:
+                            by_id[int(str(x["id"]).strip())] = x
+                        except (ValueError, TypeError):
+                            pass
                 filled = 0
                 for n, item in enumerate(batch):
                     data = by_id.get(n)
-                    if not data:
+                    if data is None and n < len(arr) and isinstance(arr[n], dict):
+                        data = arr[n]
+                    if not isinstance(data, dict):
                         continue
                     summary = clean_text(data.get("summary", ""))
                     insight = clean_text(data.get("insight", ""))
                     if summary:
                         item["summary"] = summary
-                    item["insight"] = insight
                     if insight:
+                        item["insight"] = insight
                         filled += 1
+                if filled == 0:
+                    snippet = (resp.text or "").strip().replace("\n", " ")[:200]
+                    print(f"\n  ⚠ 未解析出 insight，回應片段：{snippet!r}")
                 print(f"ok（{filled}/{len(batch)} 則有 insight）")
                 break
             except Exception as exc:  # noqa: BLE001 - 重試後仍失敗則保留 fallback
