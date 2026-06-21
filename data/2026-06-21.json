@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T16:36:54.182216+08:00",
+  "updated_at": "2026-06-21T16:55:44.429262+08:00",
   "count": 30,
   "items": [
     {
@@ -10,8 +10,30 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T12:06:52+00:00",
-      "summary": "資安研究公司Calif揭露了知名開源網頁代理伺服器與快取軟體Squid中存在長達29年的資安漏洞Squidbleed（CVE-2026-47729）。此漏洞可能導致經由HTTP存取的密碼與金鑰完全暴露，影響廣泛。",
-      "insight": "由於Squid被廣泛應用於網路代理和快取，這個存在近三十年的關鍵漏洞揭露，意味著大量組織的HTTP流量敏感資料可能長期面臨被竊取的風險，急需立即修補以保障數據安全。"
+      "summary": "不久前因揭露攻擊手法HTTP/2 Bomb而聲名大噪的資安研究公司Calif，本週公開代號為Squidbleed的資安漏洞CVE-2026-47729，顧名思義，這個漏洞存在於知名的開源網頁代理伺服器（Proxy）與網路快取軟體Squid，而且是類似",
+      "insight": ""
+    },
+    {
+      "id": "db0d573dd431dcec",
+      "title": "盤中速報 - SuperRare大跌8.22%，報0.013美元",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506362",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:50:23+00:00",
+      "summary": "SuperRare(RARE)盤中下跌，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "insight": ""
+    },
+    {
+      "id": "c05603a4d4e3f5df",
+      "title": "盤中速報 - Wormhole大漲12.82%，報0.01美元",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506359",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:35:22+00:00",
+      "summary": "Wormhole(W)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "insight": ""
     },
     {
       "id": "542d8388478eea7c",
@@ -21,30 +43,41 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T08:23:03+00:00",
-      "summary": "物理學家成功在指甲大小的宏觀固態材料中，透過實驗證實了多粒子量子糾纏效應，這項突破推翻了量子糾纏純粹發生於微觀量子系統的傳統觀念。此發現顯示，即使在肉眼可見的尺寸下，也能觀察到高階量子糾纏現象。",
-      "insight": "這項發現挑戰了量子物理學的傳統界限，為探索宏觀量子現象以及開發基於量子糾纏的下一代量子技術開啟了新的可能性。"
+      "summary": "量子糾纏應該純粹發生於量子系統，但物理學家現在正透過實驗證實高階糾纏現象，從一塊指甲大小的宏觀固態材料發現至少 […]",
+      "insight": ""
     },
     {
-      "id": "4db5af6b8130ad2d",
-      "title": "特斯拉與AI儲能需求推動 LG新能源南京廠滿載運轉",
-      "source": "中央社 財經",
-      "url": "https://www.cna.com.tw/news/acn/202606210129.aspx",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T08:04:12+00:00",
-      "summary": "韓國電池製造商LG新能源位於中國南京的圓柱電池工廠已恢復至滿負荷運轉狀態，主要受惠於特斯拉電動汽車需求回升及中國市場訂單增加。業界認為此現象顯示電池產業正顯現復甦跡象。",
-      "insight": "此一發展不僅反映電動車市場需求回溫，也暗示AI及儲能等新興領域對電池的需求將成為產業未來成長的重要驅動力。"
-    },
-    {
-      "id": "2572f17fea51aa14",
-      "title": "記憶體成「AI最緊瓶頸」！德銀警告：恐加劇整體通膨、破壞力蔓延至宏觀經濟",
+      "id": "6acfe60a29a8190d",
+      "title": "盤中速報 - Jupiter大漲8.83%，報0.22美元",
       "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506315",
+      "url": "https://news.cnyes.com/news/id/6506354",
       "category": "finance",
       "region": "taiwan",
-      "published": "2026-06-21T08:00:04+00:00",
-      "summary": "德意志銀行指出，AI浪潮造成高頻寬記憶體（HBM）需求暴增，排擠了傳統DRAM與NAND產能，形成結構性記憶體短缺危機。此短缺預計將使DRAM價格最高飆升63%並可能延續至2028年，進而推升消費電子、汽車價格與整體通膨壓力。",
-      "insight": "記憶體短缺恐導致消費電子產品和汽車成本上升，並加劇全球通膨，直接影響一般民眾的購買力與生活開支。"
+      "published": "2026-06-21T08:05:23+00:00",
+      "summary": "Jupiter(JUP)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "insight": ""
+    },
+    {
+      "id": "26e3d8716e21ddac",
+      "title": "盤中速報 - UTK大漲16.23%，報0.008美元",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506353",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:05:22+00:00",
+      "summary": "UTK(UTK)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "insight": ""
+    },
+    {
+      "id": "2c34e4b1add3d7d6",
+      "title": "盤中速報 - 愛麗絲大漲30.61%，報0.153美元",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506352",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:05:20+00:00",
+      "summary": "愛麗絲(ALICE)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "insight": ""
     },
     {
       "id": "1bd7e20868fa004c",
@@ -54,8 +87,8 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-21T07:19:43+00:00",
-      "summary": "美國特使范斯（Vance）抵達瑞士，與伊朗談判代表舉行會談，正值荷姆茲海峽（Strait of Hormuz）緊張局勢加劇。伊朗軍方聲稱已關閉該海峽，以回應以色列對黎巴嫩的持續軍事打擊，但美國則表示該海峽仍維持開放。",
-      "insight": "荷姆茲海峽是全球關鍵的石油運輸咽喉，其通行受阻的威脅或爭議，將嚴重衝擊全球能源供應與油價穩定，並加劇中東地緣政治風險，對市場影響巨大。"
+      "summary": "Iran's military said it had closed the Strait of Hormuz in response to continued Israeli military strikes in Lebanon; the U.S. said it remains open.",
+      "insight": ""
     },
     {
       "id": "56517ec41cc2bdaa",
@@ -65,18 +98,7 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T07:00:38+00:00",
-      "summary": "中國資金正透過收購跨國品牌，在全球足球場上快速擴大影響力。在安踏等中資品牌的積極拓展下，挑戰了 Nike 和 Adidas 的主導地位，並已成功拿下本屆世界盃 1/3 的球衣市場。",
-      "insight": "這預示全球體育用品市場長期由西方品牌主導的格局正被中資品牌快速打破，值得業界與投資人密切關注。"
-    },
-    {
-      "id": "6646d27979b1141b",
-      "title": "馬斯克正式領取特斯拉薪酬包！行權獲1160億美元、股票持股逼近20%",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506292",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T07:00:03+00:00",
-      "summary": "特斯拉執行長馬斯克正式完成 2018 年薪酬方案行權，以每股 23.34 美元取得約 2.86 億股特斯拉股票，帳面獲利高達 1160 億美元。隨著薪酬官司落幕，加上 SpaceX 上市後市值突破 2.4 兆美元，馬斯克個人財富攀升至 1.23 兆",
+      "summary": "中國資金透過收購跨國品牌正快速擴大在國際足球場上影響力，《日經亞洲》17 日報導，安踏年初收購德國老牌體育用品 […]",
       "insight": ""
     },
     {
@@ -91,17 +113,6 @@
       "insight": ""
     },
     {
-      "id": "9b10724fb5278118",
-      "title": "輝達AI霸權鬆動？小摩：ASIC將於2027年超車GPU、博通成最大贏家",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506040",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T06:10:03+00:00",
-      "summary": "摩根大通最新報告指出，Google TPU、AWS Trainium、微軟 Maia 與 Meta MTIA 等客製化 AI 晶片（ASIC/XPU）正快速崛起，預計 2027 年出貨量將首度超越輝達 GPU。隨著資料中心面臨電力瓶頸，「",
-      "insight": ""
-    },
-    {
       "id": "bc018b33a11e3c40",
       "title": "COMPUTEX 2026：神雲科技引領多元化 AI 解決方案",
       "source": "科技新報 TechNews",
@@ -113,17 +124,6 @@
       "insight": ""
     },
     {
-      "id": "1263ae9e3c2ca3f3",
-      "title": "從聖保羅到世界盃 台灣紡織業創新永續研發躍國際",
-      "source": "中央社 財經",
-      "url": "https://www.cna.com.tw/news/afe/202606210095.aspx",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T05:21:57+00:00",
-      "summary": "（中央社記者唐雅陵聖保羅21日專電）中南美洲台灣商會聯合總會會議19日至21日在聖保羅舉行。經濟部20日於希爾頓酒店舉辦午宴，強調台灣紡織業以創新科技與環保布料供應2026年世界盃多國球衣，展現台灣在國際舞台的關鍵地位。",
-      "insight": ""
-    },
-    {
       "id": "192625dfe9ae8b56",
       "title": "〈台股風向球〉創歷史高後高檔無壓？美伊和談突生變恐亂多頭急行軍陣腳",
       "source": "鉅亨網 台股",
@@ -131,8 +131,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:55:45+00:00",
-      "summary": "台股在創下歷史新高後，恐面臨新的不確定性。由於美伊和談突生變數，可能打亂台股多頭的急行軍陣腳，為市場高檔帶來潛在壓力。",
-      "insight": "此地緣政治風險的變化，顯示國際局勢可能實質性影響台股的高檔表現，投資人應密切關注市場震盪與資金流向。"
+      "summary": "〈台股風向球〉美伊談判變數恐亂多頭急行軍陣腳",
+      "insight": ""
     },
     {
       "id": "a916e919c052e09a",
@@ -142,8 +142,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:43:45+00:00",
-      "summary": "波若威（3163-TW）成功將光纖套件產品打入AI大廠輝達共同封裝光學（CPO）生態系。相關光纖套件及光纖配線盒產品群預計於今年下半年量產出貨，並在第四季逐步放量。",
-      "insight": "此消息顯示台灣光通訊被動元件供應商波若威在AI CPO關鍵領域取得實質進展，其量產出貨將直接影響公司下半年營收表現及產業鏈佈局。"
+      "summary": "波若威 (3163-TW) 受惠於光纖套件成功打入 AI 大廠輝達 (NVDA-US) 共同封裝光學 (CPO) 生態系，相關產品線持續邁進，包含光纖套件及光纖配線盒產品群產品，預計會在今年下半年度開始量產出貨，第 4 季逐步放量。",
+      "insight": ""
     },
     {
       "id": "1322e3bb53995ee3",
@@ -153,8 +153,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:36:33+00:00",
-      "summary": "無線射頻 (RFID) 解決方案供應商韋僑科技 (6417-TW) 在遷入台中大里新廠後綜效顯現，其利基型的醫療RFID應用產品已佔營收比重達36%。該公司並成功切入日本醫療與藥品業市場，預期將加速其在海外利基市場的成長。",
-      "insight": "這顯示韋僑科技正成功轉型至高毛利的醫療RFID利基市場並拓展日本業務，為投資人提供其營收結構優化與未來成長的潛力觀察點。"
+      "summary": "無線射頻 (RFID) 解決方案供應商韋僑科技 (6417-TW) 完成遷入台中大里新廠的綜效正在高度發揮，同時，利基型的醫療應用產品已占營收比重達 36%，在重點海外市場的日本醫療、藥品業應用開發也見到切入點。",
+      "insight": ""
     },
     {
       "id": "bbb0ad484de905be",
@@ -164,8 +164,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:08:44+00:00",
-      "summary": "台股近期震盪整理，市場情緒轉趨審慎，投資人關注端午節後可能出現的變盤。外資點出台股三大整理訊號，並將台積電7月法說會視為關鍵風向球，特別聚焦其全年財測是否上修。在此情境下，摩根資產管理指出市場資金重新配置，主動選股的價值正浮現。",
-      "insight": "在台股進入整理期且台積電法說會為市場帶來不確定性之際，投資人應更著重個別股票的基本面分析與「主動」選股，以掌握資金重新配置下的投資機會。"
+      "summary": "台股震盪整理，投資人不免擔心端午連假後「變盤」？6 月盤中曾出現明顯修正，市場情緒轉趨審慎，且台積電 (2330-TW) （TSM-US）7 月法說會，市場亦聚焦在其在全年財測是否上修。摩根資產管理點出資金的重新配置現象，上",
+      "insight": ""
     },
     {
       "id": "acdc2e1284f0ee85",
@@ -175,8 +175,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:07:19+00:00",
-      "summary": "鼎基公司正積極開闢新業務賽道，強勢進軍半導體應用領域。該公司將重心放在開發與切入半導體封裝及軟性銅箔基板（FCCL）等新材料市場。",
-      "insight": "鼎基切入半導體高成長應用市場，此舉顯示其掌握產業趨勢，有望為公司帶來新的成長動能並吸引投資者關注。"
+      "summary": "鼎基開闢熱門新賽道 強攻半導體應用切入封裝、FCCL 新材料",
+      "insight": ""
     },
     {
       "id": "a8b7179eed6310d2",
@@ -186,8 +186,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T20:32:29+00:00",
-      "summary": "Signal 總裁 Meredith Whittaker 呼籲使用者切勿將人工智慧（AI）聊天機器人擬人化，並強調它們並非有意識、有感知能力的朋友或對話者。她提醒大眾這些技術本質上是程式碼，不應與真實人際互動混淆。",
-      "insight": "這項提醒至關重要，旨在糾正使用者對 AI 聊天機器人可能產生的錯誤認知與情感依賴，並促使大眾警惕潛在的資料隱私及倫理風險。"
+      "summary": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.”",
+      "insight": ""
     },
     {
       "id": "fbf377242ca3b6c2",
@@ -252,8 +252,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:36:00+00:00",
-      "summary": "鑑於美國社會安全福利與醫療保險計畫正承受財務壓力，且可能導致每月500美元的給付削減，一項新的立法提案建議成立一個兩黨委員會。該委員會的宗旨在於強化這兩項關鍵社會福利計畫的財務穩健性。",
-      "insight": "此提案的進展將直接影響數百萬美國退休人士的福利給付，並可能改變美國社會安全福利與醫療保險體系的未來走向，對整體社會經濟產生深遠影響。"
+      "summary": "A new legislative proposal would create a bipartisan commission to strengthen the finances of Social Security and Medicare at a time when the programs are under",
+      "insight": ""
     },
     {
       "id": "2d034d582275c917",
@@ -263,8 +263,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:28:00+00:00",
-      "summary": "美國證券交易委員會 (SEC) 曾是華盛頓最嚴厲的金融監管機構，對企業不法行為具有震懾力。然而，現在SEC內部委員們正推動削弱其監管權力與影響力。",
-      "insight": "此舉可能導致投資人保護減弱，並可能鼓勵企業在監管寬鬆下採取更高風險行為，值得市場與投資人關注。"
+      "summary": "The SEC used to intimidate corporate wrongdoers. Now its own commissioners are gutting its leverage.",
+      "insight": ""
     },
     {
       "id": "2c1e718513ecade1",
@@ -274,8 +274,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T16:39:57+00:00",
-      "summary": "諾貝爾獎得主約翰·強珀(John Jumper)已從Google DeepMind離職，轉投其競爭對手Anthropic。強珀並非唯一一位離開DeepMind的知名人物，凸顯該公司近期的人才流失狀況。",
-      "insight": "此舉不僅彰顯AI領域頂尖人才爭奪的白熱化，更可能影響Google DeepMind在AI創新上的領先地位及未來競爭格局。"
+      "summary": "Jumper isn't the only big name leaving Google DeepMind.",
+      "insight": ""
     },
     {
       "id": "d25e750f6e2ceb11",
@@ -285,8 +285,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T15:20:00+00:00",
-      "summary": "德國實驗作曲家兼YouTuber Hainbach（Stefan Paul Goetsch）以其獨特的音樂創作方式聞名，他運用實驗室及科學儀器來製作音樂。Hainbach將這種仰賴非傳統設備的製作技巧形容為「合成界的《黑暗靈魂》」，致力於挑戰傳統音樂製作的界限。",
-      "insight": "這凸顯了藝術家如何透過非傳統技術和工具顛覆創作常規，為音樂人與科技愛好者提供新的靈感與可能性。"
+      "summary": "Stefan Paul Goetsch, better known as Hainbach, is a German experimental composer, artist, and YouTuber who is perhaps most famous for making music with laborato",
+      "insight": ""
     },
     {
       "id": "fe1604507761e049",
@@ -296,8 +296,19 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T15:00:01+00:00",
-      "summary": "CoinDesk的指數與數據總裁向投資者傳達訊息，強調不應低估比特幣的未來潛力。他認為比特幣的革命性可能如同智慧型手機一般，預示其將帶來深遠的變革。",
-      "insight": "此觀點可能影響投資者對比特幣長期價值的評估，促使市場重新審視其作為未來金融基礎設施的潛力，而非僅僅是投機資產。"
+      "summary": "CoinDesk’s president of indices and data has a message for investors: Don’t count out bitcoin.",
+      "insight": ""
+    },
+    {
+      "id": "80deb1652ba4f63b",
+      "title": "'Ignore it at your own peril': Jim Cramer says the bull market's key pillars are crumbling — what that means for you",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ignore-own-peril-jim-cramer-103500129.html",
+      "category": "finance",
+      "region": "international",
+      "published": "2026-06-20T10:35:00+00:00",
+      "summary": "'Ignore it at your own peril': Jim Cramer says the bull market's key pillars are crumbling — what that means for you",
+      "insight": ""
     },
     {
       "id": "b8dec49ee255fbb4",
@@ -307,8 +318,8 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T10:05:00+00:00",
-      "summary": "一項最新民意調查顯示，美國嬰兒潮世代壓倒性地支持對年輕勞工增稅，以維持他們現行的社會安全福利不變。這項觀點反映出該世代對於保障自身退休金的強烈意願。",
-      "insight": "這顯示了美國社會保障體系面臨的世代財政衝突，恐加劇年輕勞工的經濟負擔並影響未來政策走向。"
+      "summary": "Poll: US boomers support tax hikes on young workers to keep current Social Security checks — the view is overwhelming",
+      "insight": ""
     },
     {
       "id": "89a5e8c387cc1428",
@@ -318,18 +329,7 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T10:00:00+00:00",
-      "summary": "",
-      "insight": ""
-    },
-    {
-      "id": "2b58785e4475f582",
-      "title": "Best CD rates today, Saturday, June 20, 2026: Best account provides 4% APY",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-saturday-june-20-2026-100000056.html",
-      "category": "finance",
-      "region": "international",
-      "published": "2026-06-20T10:00:00+00:00",
-      "summary": "",
+      "summary": "HELOC and home equity loan rates Saturday, June 20, 2026: Fed signals higher rates are likely",
       "insight": ""
     }
   ]
