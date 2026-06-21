@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T17:27:02.809242+08:00",
+  "updated_at": "2026-06-21T17:37:30.691670+08:00",
   "count": 30,
   "items": [
     {
@@ -10,8 +10,8 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T12:06:52+00:00",
-      "summary": "不久前因揭露攻擊手法HTTP/2 Bomb而聲名大噪的資安研究公司Calif，本週公開代號為Squidbleed的資安漏洞CVE-2026-47729，顧名思義，這個漏洞存在於知名的開源網頁代理伺服器（Proxy）與網路快取軟體Squid，而且是類似",
-      "insight": ""
+      "summary": "網頁快取與代理伺服器軟體Squid被發現存在29年的漏洞，可能導致HTTP存取的密碼與金鑰被泄露。這個漏洞被稱為Squidbleed，存在於知名的開源網頁代理伺服器與網路快取軟體Squid。資安研究公司Calif公開了這個漏洞的資訊，引起了廣泛關注。",
+      "insight": "這個漏洞的發現對網路安全產生了重大影響，使用Squid的網站和應用程式可能面臨密碼和金鑰泄露的風險。"
     },
     {
       "id": "1bd7e20868fa004c",
@@ -20,9 +20,9 @@
       "url": "https://www.cnbc.com/2026/06/20/iran-reportedly-closes-strait-of-hormuz-again-raising-doubt-over-talks.html",
       "category": "finance",
       "region": "international",
-      "published": "2026-06-21T09:22:07+00:00",
-      "summary": "Iran's military said it had closed the Strait of Hormuz in response to continued Israeli military strikes in Lebanon; the U.S. said it remains open.",
-      "insight": ""
+      "published": "2026-06-21T09:25:13+00:00",
+      "summary": "伊朗軍方宣布因以色列在黎巴嫩的軍事行動而關閉霍爾木茲海峽，美國則表示海峽仍然開放。美國財政部長Vance抵達瑞士與伊朗談判代表進行會談，旨在緩解霍爾木茲海峽的緊張局勢。",
+      "insight": "霍爾木茲海峽的局勢對全球能源市場和國際關係產生了重大影響，任何關閉或限制都可能導致油價上漲和地區不穩定。"
     },
     {
       "id": "3d0d3cba06637f1d",
@@ -32,8 +32,30 @@
       "category": "finance",
       "region": "taiwan",
       "published": "2026-06-21T09:00:07+00:00",
-      "summary": "摩根大通大幅調升日本記憶體大廠鎧俠目標價至 15.5 萬日元，較原先預測大增 93.8%，並維持增持評級。報告指出，AI 推論需求帶動 NAND 快閃記憶體市場升溫，搭配企業級 SSD 成長、股東回饋政策與輝達合作布局，鎧俠正迎",
-      "insight": ""
+      "summary": "摩根大通將日本記憶體大廠鎧俠的目標價上調93.8%，並維持增持評級。報告指出，AI推論需求帶動NAND快閃記憶體市場升溫，鎧俠正迎來新的發展機會。",
+      "insight": "這個上調對鎧俠的股票價格和整個記憶體市場產生了重大影響，投資者可能會重新評估鎧俠的投資價值和市場前景。"
+    },
+    {
+      "id": "56868ce13e5be11a",
+      "title": "台南部分區域水質黃濁 台水已啟動管線排水作業",
+      "source": "中央社 財經",
+      "url": "https://www.cna.com.tw/news/ahel/202606210138.aspx",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:51:31+00:00",
+      "summary": "台南部分地區的水質出現黃濁，台水公司已啟動管線排水作業。目前抽驗結果顯示東區和南區的水質符合飲用水標準，台水將逐案處理用戶的投訴。",
+      "insight": "這個事件對台南居民的生活和健康產生了影響，台水公司的處理措施將直接影響居民的信任和滿意度。"
+    },
+    {
+      "id": "05a8dfc46ad1dd60",
+      "title": "台積電全額資助 熊本大學設新獎學金培育半導體人才",
+      "source": "中央社 財經",
+      "url": "https://www.cna.com.tw/news/aopl/202606210135.aspx",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T08:28:24+00:00",
+      "summary": "台積電全額資助熊本大學設立新的獎學金制度，旨在培育半導體人才。這個合作將有助於培養更多的半導體專業人才，促進台積電和熊本大學的合作與發展。",
+      "insight": "這個合作對半導體產業的發展和人才培養產生了積極影響，台積電和熊本大學的合作將有助於提升半導體技術和人才的水平。"
     },
     {
       "id": "542d8388478eea7c",
@@ -43,8 +65,8 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T08:23:03+00:00",
-      "summary": "量子糾纏應該純粹發生於量子系統，但物理學家現在正透過實驗證實高階糾纏現象，從一塊指甲大小的宏觀固態材料發現至少 […]",
-      "insight": ""
+      "summary": "物理學家透過實驗證實了宏觀奇異金屬晶體中多粒子量子糾纏效應的存在。這個發現對量子物理學和材料科學產生了重大影響，可能帶來新的技術和應用。肉眼可見的宏觀奇異金屬晶體展現了多粒子量子糾纏效應，開闢了新的研究領域。",
+      "insight": "這個發現對量子物理學和材料科學的發展產生了重大影響，可能帶來新的技術和應用，推動相關領域的進步和創新。"
     },
     {
       "id": "4db5af6b8130ad2d",
@@ -54,8 +76,8 @@
       "category": "finance",
       "region": "taiwan",
       "published": "2026-06-21T08:04:12+00:00",
-      "summary": "（中央社台北21日電）韓國電池製造商LG新能源位於中國南京的圓柱電池工廠已恢復至滿負荷運轉狀態。隨著特斯拉電動汽車需求回升及中國市場訂單增加，業界認為電池業正顯現復甦跡象。",
-      "insight": ""
+      "summary": "韓國電池製造商LG新能源位於中國南京的圓柱電池工廠已恢復至滿負荷運轉狀態。這是因為特斯拉電動汽車需求回升及中國市場訂單增加，電池業正顯現復甦跡象。這個趨勢可能會對全球電動車市場產生影響。",
+      "insight": "這個消息對讀者來說很重要，因為它反映了電動車市場的復甦和對電池需求的增加，可能會推動相關產業的發展。"
     },
     {
       "id": "2572f17fea51aa14",
@@ -65,8 +87,8 @@
       "category": "finance",
       "region": "taiwan",
       "published": "2026-06-21T08:00:04+00:00",
-      "summary": "德意志銀行指出，AI 浪潮帶動高頻寬記憶體（HBM）需求暴增，正在排擠傳統 DRAM 與 NAND 產能，形成結構性記憶體短缺危機。德銀預估 DRAM 價格最高將飆升 63%，短缺恐延續至 2028 年，並推升消費電子、汽車價格與通膨壓力，",
-      "insight": ""
+      "summary": "德意志銀行指出，AI浪潮帶動高頻寬記憶體需求暴增，正在排擠傳統DRAM與NAND產能，形成結構性記憶體短缺危機。德銀預估DRAM價格最高將飆升63%，短缺恐延續至2028年，並推升消費電子、汽車價格與通膨壓力。這個趨勢可能會對全球電子產業產生重大影響。",
+      "insight": "這個消息對讀者來說很重要，因為它預測了記憶體短缺可能會對整體經濟產生重大影響，包括推升消費電子和汽車價格。"
     },
     {
       "id": "56517ec41cc2bdaa",
@@ -76,19 +98,8 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T07:00:38+00:00",
-      "summary": "中國資金透過收購跨國品牌正快速擴大在國際足球場上影響力，《日經亞洲》17 日報導，安踏年初收購德國老牌體育用品 […]",
-      "insight": ""
-    },
-    {
-      "id": "6646d27979b1141b",
-      "title": "馬斯克正式領取特斯拉薪酬包！行權獲1160億美元、股票持股逼近20%",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506292",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T07:00:03+00:00",
-      "summary": "特斯拉執行長馬斯克正式完成 2018 年薪酬方案行權，以每股 23.34 美元取得約 2.86 億股特斯拉股票，帳面獲利高達 1160 億美元。隨著薪酬官司落幕，加上 SpaceX 上市後市值突破 2.4 兆美元，馬斯克個人財富攀升至 1.23 兆",
-      "insight": ""
+      "summary": "中國資金透過收購跨國品牌正快速擴大在國際足球場上影響力，安踏年初收購德國老牌體育用品品牌Puma。這個收購案使得中國品牌在國際足球場上獲得了更大的影響力。中國品牌現在已經拿下了世足1/3的球衣市場。",
+      "insight": "這個消息對讀者來說很重要，因為它反映了中國品牌在國際市場上的崛起和影響力，可能會對全球體育用品市場產生重大影響。"
     },
     {
       "id": "d5728efe1f77c921",
@@ -98,19 +109,8 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T06:30:56+00:00",
-      "summary": "天文學界持續數月的重大爭議已有定論：宇宙仍在加速膨脹，暗能量依然存在。 2025年底韓國天文學家發表研究，聲稱 […]",
-      "insight": ""
-    },
-    {
-      "id": "9b10724fb5278118",
-      "title": "輝達AI霸權鬆動？小摩：ASIC將於2027年超車GPU、博通成最大贏家",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506040",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T06:10:03+00:00",
-      "summary": "摩根大通最新報告指出，Google TPU、AWS Trainium、微軟 Maia 與 Meta MTIA 等客製化 AI 晶片（ASIC/XPU）正快速崛起，預計 2027 年出貨量將首度超越輝達 GPU。隨著資料中心面臨電力瓶頸，「",
-      "insight": ""
+      "summary": "天文學界持續數月的重大爭議已有定論：宇宙仍在加速膨脹，暗能量依然存在。2025年底韓國天文學家發表研究，聲稱宇宙加速膨脹的速度可能會減慢，但最新的研究結果證實了宇宙仍在加速膨脹。這個發現可能會對我們對宇宙的理解產生重大影響。",
+      "insight": "這個消息對讀者來說很重要，因為它更新了我們對宇宙的理解，可能會對天文學和物理學的研究產生重大影響。"
     },
     {
       "id": "bc018b33a11e3c40",
@@ -120,8 +120,8 @@
       "category": "ai",
       "region": "taiwan",
       "published": "2026-06-21T06:00:21+00:00",
-      "summary": "全球高效能伺服器解決方案領導者神達控股股份有限公司子公司神雲科技（MiTAC Computing Techno […]",
-      "insight": ""
+      "summary": "全球高效能伺服器解決方案領導者神達控股股份有限公司子公司神雲科技（MiTAC Computing Technology）在COMPUTEX 2026上展示了多元化AI解決方案。這些解決方案包括高效能計算、儲存和網路等，可能會對全球AI產業產生重大影響。",
+      "insight": "這個消息對讀者來說很重要，因為它展示了神雲科技在AI解決方案上的領導地位，可能會對全球AI產業的發展產生重大影響。"
     },
     {
       "id": "192625dfe9ae8b56",
@@ -131,8 +131,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:55:45+00:00",
-      "summary": "〈台股風向球〉美伊談判變數恐亂多頭急行軍陣腳",
-      "insight": ""
+      "summary": "美伊談判變數恐亂多頭急行軍陣腳，台股風向球指出美伊和談突生變可能會對全球金融市場產生重大影響。這個消息可能會對投資者和金融市場產生重大影響。",
+      "insight": "這個消息對讀者來說很重要，因為它預測了美伊談判變數可能會對全球金融市場產生重大影響，可能會影響投資者的決策和金融市場的走勢。"
     },
     {
       "id": "a916e919c052e09a",
@@ -142,8 +142,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:43:45+00:00",
-      "summary": "波若威 (3163-TW) 受惠於光纖套件成功打入 AI 大廠輝達 (NVDA-US) 共同封裝光學 (CPO) 生態系，相關產品線持續邁進，包含光纖套件及光纖配線盒產品群產品，預計會在今年下半年度開始量產出貨，第 4 季逐步放量。",
-      "insight": ""
+      "summary": "波若威公司受惠於光纖套件成功打入AI大廠輝達的共同封裝光學生態系，相關產品線持續邁進。預計今年下半年度開始量產出貨，第4季逐步放量。這些產品包括光纖套件及光纖配線盒產品群。",
+      "insight": "這對波若威公司的營收和市場地位有著重要影響，值得關注其未來的發展動向。"
     },
     {
       "id": "1322e3bb53995ee3",
@@ -153,8 +153,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:36:33+00:00",
-      "summary": "無線射頻 (RFID) 解決方案供應商韋僑科技 (6417-TW) 完成遷入台中大里新廠的綜效正在高度發揮，同時，利基型的醫療應用產品已占營收比重達 36%，在重點海外市場的日本醫療、藥品業應用開發也見到切入點。",
-      "insight": ""
+      "summary": "韋僑科技的RFID解決方案已占營收比重達36%，公司正在開發日本利基市場以加速成長。同時，公司的新廠也正在發揮綜效。",
+      "insight": "韋僑科技的醫療應用產品在日本市場的發展值得關注，因為這可能會帶來新的成長機會。"
     },
     {
       "id": "bbb0ad484de905be",
@@ -164,8 +164,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:08:44+00:00",
-      "summary": "台股震盪整理，投資人不免擔心端午連假後「變盤」？6 月盤中曾出現明顯修正，市場情緒轉趨審慎，且台積電 (2330-TW) （TSM-US）7 月法說會，市場亦聚焦在其在全年財測是否上修。摩根資產管理點出資金的重新配置現象，上",
-      "insight": ""
+      "summary": "台積電的7月法說會被視為市場的風向球，外資示警台股可能出現整理訊號。投資人需要謹慎選股以應對市場的變化。",
+      "insight": "台積電的法說會對台股的走勢有著重要影響，投資人需要關注其財測和市場走勢的變化。"
     },
     {
       "id": "acdc2e1284f0ee85",
@@ -175,8 +175,8 @@
       "category": "investment",
       "region": "taiwan",
       "published": "2026-06-21T03:07:19+00:00",
-      "summary": "鼎基開闢熱門新賽道 強攻半導體應用切入封裝、FCCL 新材料",
-      "insight": ""
+      "summary": "鼎基公司正在開闢新的賽道，強攻半導體應用切入封裝和FCCL新材料的領域。",
+      "insight": "鼎基公司的新發展方向可能會帶來新的成長機會和市場份額，值得關注其未來的發展動向。"
     },
     {
       "id": "a8b7179eed6310d2",
@@ -186,8 +186,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T20:32:29+00:00",
-      "summary": "\"These are not your friends. These are not conscious beings. These are not sentient interlocutors.”",
-      "insight": ""
+      "summary": "Signal的Meredith Whittaker提醒人們，AI聊天機器人並不是真正的朋友或有感知的生命體。這些機器人只是程式設計的工具。",
+      "insight": "這個觀點對於人們對AI的認知和使用有著重要的啟示，提醒人們需要謹慎對待AI技術的發展和應用。"
     },
     {
       "id": "fbf377242ca3b6c2",
@@ -197,8 +197,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T20:00:00+00:00",
-      "summary": "“If you find a need in your community, there’s likely an organization that will help you get involved.”",
-      "insight": ""
+      "summary": "一對夫婦沒有繼承人，但他們通過捐贈財富來使世界變得更好。這個故事提醒人們，金錢可以帶來幸福，但也需要用來幫助他人。",
+      "insight": "這個故事對於人們的價值觀和社會責任有著重要的啟示，提醒人們需要關注社會的需求和公益事業。"
     },
     {
       "id": "af08cad5eb0b0436",
@@ -208,8 +208,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T19:41:11+00:00",
-      "summary": "So ... what's your In the Weights score?",
-      "insight": ""
+      "summary": "In the Weights 是一種新的 AI 評分系統，允許用戶查詢自己的評分。這個評分系統是基於 AI 的，並可以提供用戶的相關信息。用戶可以通過這個系統了解自己的評分，並與他人比較。",
+      "insight": "這個評分系統可能會對用戶的自我認知和社交比較行為產生影響，值得關注其潛在的社會影響。"
     },
     {
       "id": "701b99877c40ae71",
@@ -219,8 +219,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:59:00+00:00",
-      "summary": "This fear is probably going to cause you some regrets.",
-      "insight": ""
+      "summary": "退休後的金錢管理是很多人擔心的問題，尤其是害怕花光退休金。文章提供了一種方法來克服這種恐懼，讓人們更好地管理退休金。這種方法可以幫助人們更合理地使用退休金，避免過度消費。",
+      "insight": "退休金管理是老年人的一個重要問題，找到有效的管理方法可以幫助人們更好地享受退休生活，值得關注。"
     },
     {
       "id": "4eab1815f90abaf3",
@@ -230,8 +230,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T18:46:48+00:00",
-      "summary": "Atlantic reporter Alex Reisner recently uncovered four datasets of music being used to train AI models and made them fully searchable for the public. Two of the",
-      "insight": ""
+      "summary": "《大西洋》雜誌創建了一個可搜尋的音樂數據庫，用于訓練 AI 模型。這個數據庫包含 12 萬和 9 萬條音樂軌道，還有兩個較小的數據庫。這個數據庫可以讓公眾更好地了解 AI 模型的訓練過程。",
+      "insight": "這個數據庫可以幫助人們更好地了解 AI 模型的訓練過程和音樂的作用，對於 AI 研究和音樂產業都有重要的意義。"
     },
     {
       "id": "1f9db9363a937c9b",
@@ -241,8 +241,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:42:00+00:00",
-      "summary": "Here’s your new playbook to protect your retirement cash.",
-      "insight": ""
+      "summary": "退休金的稅收是很多人擔心的問題，文章提供了一種新的方法來保護退休金。這種方法可以幫助人們避免過多的稅收，保留更多的退休金。",
+      "insight": "退休金的稅收管理是老年人的一個重要問題，找到有效的管理方法可以幫助人們更好地享受退休生活，值得關注。"
     },
     {
       "id": "a7dcc922ead9bf52",
@@ -252,8 +252,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:36:00+00:00",
-      "summary": "A new legislative proposal would create a bipartisan commission to strengthen the finances of Social Security and Medicare at a time when the programs are under",
-      "insight": ""
+      "summary": "社會保障金的財政狀況正在面臨挑戰，可能會導致每月 500 美元的減少。為了應對這個問題，提出了一個新的立法提案，旨在加強社會保障和醫療保健的財政狀況。",
+      "insight": "社會保障金的財政狀況對於很多人來說是一個重要的問題，找到有效的解決方法可以幫助人們更好地享受退休生活，值得關注。"
     },
     {
       "id": "2d034d582275c917",
@@ -263,8 +263,8 @@
       "category": "investment",
       "region": "international",
       "published": "2026-06-20T18:28:00+00:00",
-      "summary": "The SEC used to intimidate corporate wrongdoers. Now its own commissioners are gutting its leverage.",
-      "insight": ""
+      "summary": "華盛頓的金融監管機構正在面臨挑戰，可能會導致其監管能力的削弱。文章介紹了這個問題的背景和可能的影響。",
+      "insight": "金融監管機構的監管能力對於維護金融秩序和保護投資者利益至關重要，削弱其監管能力可能會對金融市場產生不利影響，值得關注。"
     },
     {
       "id": "2c1e718513ecade1",
@@ -274,8 +274,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T16:39:57+00:00",
-      "summary": "Jumper isn't the only big name leaving Google DeepMind.",
-      "insight": ""
+      "summary": "諾貝爾獎得主約翰·賈姆珀（John Jumper）將離開DeepMind，加入競爭對手Anthropic。賈姆珀並非唯一一位離開Google DeepMind的知名人物。這次離職可能會對人工智慧領域產生影響。",
+      "insight": "這次離職對讀者來說意味著人工智慧領域的競爭將更加激烈，可能會帶來新的技術突破和創新。"
     },
     {
       "id": "d25e750f6e2ceb11",
@@ -285,8 +285,8 @@
       "category": "ai",
       "region": "international",
       "published": "2026-06-20T15:20:00+00:00",
-      "summary": "Stefan Paul Goetsch, better known as Hainbach, is a German experimental composer, artist, and YouTuber who is perhaps most famous for making music with laborato",
-      "insight": ""
+      "summary": "德國實驗音樂家和YouTuber Hainbach（斯蒂芬·保羅·格茨）以使用實驗設備和科學儀器創作音樂而聞名。他將自己的音樂創作比喻為「黑暗之魂的合成」。Hainbach的音樂風格獨特，常使用電話線路測試設備等非傳統樂器。",
+      "insight": "Hainbach的音樂創作風格對讀者來說提供了一個新的藝術表達視角，展現了音樂和科技的交融。"
     },
     {
       "id": "fe1604507761e049",
@@ -296,8 +296,19 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T15:00:01+00:00",
-      "summary": "CoinDesk’s president of indices and data has a message for investors: Don’t count out bitcoin.",
-      "insight": ""
+      "summary": "根據CoinDesk的報導，該公司的指數和數據總裁認為比特幣的未來將會像智能手機一樣具有革命性。這位總裁呼籲投資者不要低估比特幣的潛力。比特幣的發展可能會對金融市場產生深遠影響。",
+      "insight": "這個預測對讀者來說意味著比特幣和其他加密貨幣可能會在未來幾年內發揮更重要的角色，影響全球金融市場的走向。"
+    },
+    {
+      "id": "e511e0884ae78c4a",
+      "title": "The Fed's Warsh era clearly has a new vibe — and that's not all bad for investors",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/the-feds-warsh-era-clearly-has-a-new-vibe--and-thats-not-all-bad-for-investors-110147708.html",
+      "category": "finance",
+      "region": "international",
+      "published": "2026-06-20T11:01:47+00:00",
+      "summary": "美聯儲的沃許時代具有新的氛圍，這可能對投資者既有利也有弊。這個時代的特點和影響尚待觀察。美聯儲的政策將對全球經濟產生重要影響。",
+      "insight": "這個新的時代對讀者來說意味著需要關注美聯儲的政策變化和其對全球經濟的影響，從而做出更明智的投資決策。"
     },
     {
       "id": "2bf53df7034f9c6c",
@@ -307,8 +318,8 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T10:40:00+00:00",
-      "summary": "Scott Galloway says GLP-1 drugs are a 'silver bullet' for America's woes, if we're not 'stupid enough' to get in the way",
-      "insight": ""
+      "summary": "斯科特·加洛韋（Scott Galloway）認為GLP-1藥物可能是解決美國問題的「銀彈」，但前提是不要因為人為因素而阻礙其發展。GLP-1藥物的潛在影響和應用值得關注。",
+      "insight": "這個觀點對讀者來說意味著GLP-1藥物可能會對醫療和健康產業產生重大影響，從而改善人們的生活質量。"
     },
     {
       "id": "80deb1652ba4f63b",
@@ -318,19 +329,8 @@
       "category": "finance",
       "region": "international",
       "published": "2026-06-20T10:35:00+00:00",
-      "summary": "'Ignore it at your own peril': Jim Cramer says the bull market's key pillars are crumbling — what that means for you",
-      "insight": ""
-    },
-    {
-      "id": "b8dec49ee255fbb4",
-      "title": "Poll: US boomers support tax hikes on young workers to keep current Social Security checks — the view is overwhelming",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/economy/policy/articles/poll-us-boomers-support-tax-100500119.html",
-      "category": "finance",
-      "region": "international",
-      "published": "2026-06-20T10:05:00+00:00",
-      "summary": "Poll: US boomers support tax hikes on young workers to keep current Social Security checks — the view is overwhelming",
-      "insight": ""
+      "summary": "吉姆·克拉默（Jim Cramer）警告說，牛市的幾個關鍵支柱正在崩潰，投資者需要注意這個變化。這個警告對於投資者來說具有重要的參考價值。",
+      "insight": "這個警告對讀者來說意味著需要重新評估投資策略，關注市場的變化和風險，從而做出更合理的投資決策。"
     }
   ]
 }
