@@ -28,8 +28,9 @@ import feedparser
 from sources import FEEDS, MAX_PER_BUCKET
 
 # ───────────────────────── 設定 ─────────────────────────
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-BATCH_SIZE = int(os.environ.get("GEMINI_BATCH_SIZE", "6"))  # 每次請求處理幾篇（壓低 RPM）
+# gemini-2.0-flash 免費版每日額度遠高於 2.5-flash（後者免費版每日僅 20 次）
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+BATCH_SIZE = int(os.environ.get("GEMINI_BATCH_SIZE", "6"))  # 每次請求處理幾篇（壓低用量）
 TAIPEI = timezone(timedelta(hours=8))
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
