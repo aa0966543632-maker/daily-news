@@ -395,9 +395,9 @@ body {
   font-size: 0.78rem;
 }
 
-/* ───── 手機篩選收合 ───── */
+/* ───── 手機篩選收合按鈕 ───── */
 .filter-toggle {
-  display: none; /* 桌機隱藏 */
+  display: none; /* JS 控制顯示，預設隱藏 */
   align-items: center;
   gap: 6px;
   font-family: inherit;
@@ -412,6 +412,7 @@ body {
   backdrop-filter: blur(8px);
   transition: all 0.2s var(--ease);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .filter-toggle:hover { color: var(--text); border-color: rgba(14,155,184,0.45); }
 .filter-toggle.active {
@@ -421,19 +422,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .filter-toggle { display: flex; }
-
-  /* 手機預設收起篩選列 */
-  .controls {
-    display: none;
-    margin-top: 12px;
-  }
-  .controls.open {
-    display: flex;
-  }
-
   .view-toggle { margin-left: 0; width: 100%; }
   .header-inner { align-items: center; }
+  .controls { margin-top: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

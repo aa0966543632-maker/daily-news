@@ -143,15 +143,43 @@ function wireControls() {
   });
 }
 
-/* ───── 手機篩選收合 ───── */
+/* ───── 手機篩選收合（JS 控制，避免 CSS 權重問題） ───── */
+const MOBILE_BP = 768;
+
+function applyMobileHeader() {
+  const btn = document.getElementById("filter-toggle");
+  const bar = document.getElementById("controls-bar");
+  if (!btn || !bar) return;
+
+  if (window.innerWidth <= MOBILE_BP) {
+    // 手機：顯示篩選按鈕，預設收起篩選列
+    btn.style.display = "flex";
+    if (!bar.classList.contains("open")) {
+      bar.style.display = "none";
+    }
+  } else {
+    // 桌機：隱藏篩選按鈕，永遠顯示篩選列
+    btn.style.display = "none";
+    bar.style.display = "";
+    bar.classList.remove("open");
+    btn.classList.remove("active");
+  }
+}
+
 function wireFilterToggle() {
   const btn = document.getElementById("filter-toggle");
   const bar = document.getElementById("controls-bar");
   if (!btn || !bar) return;
+
   btn.addEventListener("click", () => {
-    const open = bar.classList.toggle("open");
-    btn.classList.toggle("active", open);
+    const opening = !bar.classList.contains("open");
+    bar.classList.toggle("open", opening);
+    bar.style.display = opening ? "flex" : "none";
+    btn.classList.toggle("active", opening);
   });
+
+  applyMobileHeader();
+  window.addEventListener("resize", applyMobileHeader);
 }
 
 /* ───── 啟動 ───── */
