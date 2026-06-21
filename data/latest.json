@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T16:55:44.429262+08:00",
+  "updated_at": "2026-06-21T17:07:41.013940+08:00",
   "count": 30,
   "items": [
     {
@@ -14,25 +14,14 @@
       "insight": ""
     },
     {
-      "id": "db0d573dd431dcec",
-      "title": "盤中速報 - SuperRare大跌8.22%，報0.013美元",
+      "id": "3d0d3cba06637f1d",
+      "title": "摩根大通喊買鎧俠！上調目標價93.8%、AI推論需求引爆NAND快閃記憶體新行情",
       "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506362",
+      "url": "https://news.cnyes.com/news/id/6506289",
       "category": "finance",
       "region": "taiwan",
-      "published": "2026-06-21T08:50:23+00:00",
-      "summary": "SuperRare(RARE)盤中下跌，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
-      "insight": ""
-    },
-    {
-      "id": "c05603a4d4e3f5df",
-      "title": "盤中速報 - Wormhole大漲12.82%，報0.01美元",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506359",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T08:35:22+00:00",
-      "summary": "Wormhole(W)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "published": "2026-06-21T09:00:07+00:00",
+      "summary": "摩根大通大幅調升日本記憶體大廠鎧俠目標價至 15.5 萬日元，較原先預測大增 93.8%，並維持增持評級。報告指出，AI 推論需求帶動 NAND 快閃記憶體市場升溫，搭配企業級 SSD 成長、股東回饋政策與輝達合作布局，鎧俠正迎",
       "insight": ""
     },
     {
@@ -47,36 +36,25 @@
       "insight": ""
     },
     {
-      "id": "6acfe60a29a8190d",
-      "title": "盤中速報 - Jupiter大漲8.83%，報0.22美元",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506354",
+      "id": "4db5af6b8130ad2d",
+      "title": "特斯拉與AI儲能需求推動 LG新能源南京廠滿載運轉",
+      "source": "中央社 財經",
+      "url": "https://www.cna.com.tw/news/acn/202606210129.aspx",
       "category": "finance",
       "region": "taiwan",
-      "published": "2026-06-21T08:05:23+00:00",
-      "summary": "Jupiter(JUP)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "published": "2026-06-21T08:04:12+00:00",
+      "summary": "（中央社台北21日電）韓國電池製造商LG新能源位於中國南京的圓柱電池工廠已恢復至滿負荷運轉狀態。隨著特斯拉電動汽車需求回升及中國市場訂單增加，業界認為電池業正顯現復甦跡象。",
       "insight": ""
     },
     {
-      "id": "26e3d8716e21ddac",
-      "title": "盤中速報 - UTK大漲16.23%，報0.008美元",
+      "id": "2572f17fea51aa14",
+      "title": "記憶體成「AI最緊瓶頸」！德銀警告：恐加劇整體通膨、破壞力蔓延至宏觀經濟",
       "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506353",
+      "url": "https://news.cnyes.com/news/id/6506315",
       "category": "finance",
       "region": "taiwan",
-      "published": "2026-06-21T08:05:22+00:00",
-      "summary": "UTK(UTK)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
-      "insight": ""
-    },
-    {
-      "id": "2c34e4b1add3d7d6",
-      "title": "盤中速報 - 愛麗絲大漲30.61%，報0.153美元",
-      "source": "鉅亨網 頭條",
-      "url": "https://news.cnyes.com/news/id/6506352",
-      "category": "finance",
-      "region": "taiwan",
-      "published": "2026-06-21T08:05:20+00:00",
-      "summary": "愛麗絲(ALICE)盤中上漲，交易價格、總成交量、市值、近日週月績效、即時新聞資訊。",
+      "published": "2026-06-21T08:00:04+00:00",
+      "summary": "德意志銀行指出，AI 浪潮帶動高頻寬記憶體（HBM）需求暴增，正在排擠傳統 DRAM 與 NAND 產能，形成結構性記憶體短缺危機。德銀預估 DRAM 價格最高將飆升 63%，短缺恐延續至 2028 年，並推升消費電子、汽車價格與通膨壓力，",
       "insight": ""
     },
     {
@@ -102,6 +80,17 @@
       "insight": ""
     },
     {
+      "id": "6646d27979b1141b",
+      "title": "馬斯克正式領取特斯拉薪酬包！行權獲1160億美元、股票持股逼近20%",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506292",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T07:00:03+00:00",
+      "summary": "特斯拉執行長馬斯克正式完成 2018 年薪酬方案行權，以每股 23.34 美元取得約 2.86 億股特斯拉股票，帳面獲利高達 1160 億美元。隨著薪酬官司落幕，加上 SpaceX 上市後市值突破 2.4 兆美元，馬斯克個人財富攀升至 1.23 兆",
+      "insight": ""
+    },
+    {
       "id": "d5728efe1f77c921",
       "title": "宇宙還在加速膨脹，暗能量「危機」解除",
       "source": "科技新報 TechNews",
@@ -110,6 +99,17 @@
       "region": "taiwan",
       "published": "2026-06-21T06:30:56+00:00",
       "summary": "天文學界持續數月的重大爭議已有定論：宇宙仍在加速膨脹，暗能量依然存在。 2025年底韓國天文學家發表研究，聲稱 […]",
+      "insight": ""
+    },
+    {
+      "id": "9b10724fb5278118",
+      "title": "輝達AI霸權鬆動？小摩：ASIC將於2027年超車GPU、博通成最大贏家",
+      "source": "鉅亨網 頭條",
+      "url": "https://news.cnyes.com/news/id/6506040",
+      "category": "finance",
+      "region": "taiwan",
+      "published": "2026-06-21T06:10:03+00:00",
+      "summary": "摩根大通最新報告指出，Google TPU、AWS Trainium、微軟 Maia 與 Meta MTIA 等客製化 AI 晶片（ASIC/XPU）正快速崛起，預計 2027 年出貨量將首度超越輝達 GPU。隨著資料中心面臨電力瓶頸，「",
       "insight": ""
     },
     {
@@ -300,6 +300,17 @@
       "insight": ""
     },
     {
+      "id": "2bf53df7034f9c6c",
+      "title": "Scott Galloway says GLP-1 drugs are a 'silver bullet' for America's woes, if we're not 'stupid enough' to get in the way",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/healthcare/articles/scott-galloway-says-glp-1-104000091.html",
+      "category": "finance",
+      "region": "international",
+      "published": "2026-06-20T10:40:00+00:00",
+      "summary": "Scott Galloway says GLP-1 drugs are a 'silver bullet' for America's woes, if we're not 'stupid enough' to get in the way",
+      "insight": ""
+    },
+    {
       "id": "80deb1652ba4f63b",
       "title": "'Ignore it at your own peril': Jim Cramer says the bull market's key pillars are crumbling — what that means for you",
       "source": "Yahoo Finance",
@@ -319,17 +330,6 @@
       "region": "international",
       "published": "2026-06-20T10:05:00+00:00",
       "summary": "Poll: US boomers support tax hikes on young workers to keep current Social Security checks — the view is overwhelming",
-      "insight": ""
-    },
-    {
-      "id": "89a5e8c387cc1428",
-      "title": "HELOC and home equity loan rates Saturday, June 20, 2026: Fed signals higher rates are likely",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-interest-rates-today-saturday-june-20-2026-100000980.html",
-      "category": "finance",
-      "region": "international",
-      "published": "2026-06-20T10:00:00+00:00",
-      "summary": "HELOC and home equity loan rates Saturday, June 20, 2026: Fed signals higher rates are likely",
       "insight": ""
     }
   ]
