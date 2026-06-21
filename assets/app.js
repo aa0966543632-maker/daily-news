@@ -143,9 +143,21 @@ function wireControls() {
   });
 }
 
+/* ───── 手機篩選收合 ───── */
+function wireFilterToggle() {
+  const btn = document.getElementById("filter-toggle");
+  const bar = document.getElementById("controls-bar");
+  if (!btn || !bar) return;
+  btn.addEventListener("click", () => {
+    const open = bar.classList.toggle("open");
+    btn.classList.toggle("active", open);
+  });
+}
+
 /* ───── 啟動 ───── */
 async function init() {
   wireControls();
+  wireFilterToggle();
   const updated = document.getElementById("updated");
   try {
     const res = await fetch("data/latest.json", { cache: "no-store" });

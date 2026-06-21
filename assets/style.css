@@ -395,9 +395,45 @@ body {
   font-size: 0.78rem;
 }
 
-@media (max-width: 560px) {
+/* ───── 手機篩選收合 ───── */
+.filter-toggle {
+  display: none; /* 桌機隱藏 */
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: var(--glass-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+}
+.filter-toggle:hover { color: var(--text); border-color: rgba(14,155,184,0.45); }
+.filter-toggle.active {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: var(--cyan-soft);
+}
+
+@media (max-width: 768px) {
+  .filter-toggle { display: flex; }
+
+  /* 手機預設收起篩選列 */
+  .controls {
+    display: none;
+    margin-top: 12px;
+  }
+  .controls.open {
+    display: flex;
+  }
+
   .view-toggle { margin-left: 0; width: 100%; }
-  .header-inner { align-items: flex-start; }
+  .header-inner { align-items: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
