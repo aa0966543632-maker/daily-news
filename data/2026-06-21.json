@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T17:16:53.801023+08:00",
+  "updated_at": "2026-06-21T17:27:02.809242+08:00",
   "count": 30,
   "items": [
     {
@@ -11,6 +11,17 @@
       "region": "taiwan",
       "published": "2026-06-21T12:06:52+00:00",
       "summary": "不久前因揭露攻擊手法HTTP/2 Bomb而聲名大噪的資安研究公司Calif，本週公開代號為Squidbleed的資安漏洞CVE-2026-47729，顧名思義，這個漏洞存在於知名的開源網頁代理伺服器（Proxy）與網路快取軟體Squid，而且是類似",
+      "insight": ""
+    },
+    {
+      "id": "1bd7e20868fa004c",
+      "title": "Vance arrives in Switzerland for talks with Iranian negotiators amid rising Strait of Hormuz tensions",
+      "source": "CNBC Finance",
+      "url": "https://www.cnbc.com/2026/06/20/iran-reportedly-closes-strait-of-hormuz-again-raising-doubt-over-talks.html",
+      "category": "finance",
+      "region": "international",
+      "published": "2026-06-21T09:22:07+00:00",
+      "summary": "Iran's military said it had closed the Strait of Hormuz in response to continued Israeli military strikes in Lebanon; the U.S. said it remains open.",
       "insight": ""
     },
     {
@@ -55,17 +66,6 @@
       "region": "taiwan",
       "published": "2026-06-21T08:00:04+00:00",
       "summary": "德意志銀行指出，AI 浪潮帶動高頻寬記憶體（HBM）需求暴增，正在排擠傳統 DRAM 與 NAND 產能，形成結構性記憶體短缺危機。德銀預估 DRAM 價格最高將飆升 63%，短缺恐延續至 2028 年，並推升消費電子、汽車價格與通膨壓力，",
-      "insight": ""
-    },
-    {
-      "id": "1bd7e20868fa004c",
-      "title": "Vance arrives in Switzerland for talks with Iranian negotiators amid rising Strait of Hormuz tensions",
-      "source": "CNBC Finance",
-      "url": "https://www.cnbc.com/2026/06/20/iran-reportedly-closes-strait-of-hormuz-again-raising-doubt-over-talks.html",
-      "category": "finance",
-      "region": "international",
-      "published": "2026-06-21T07:19:43+00:00",
-      "summary": "Iran's military said it had closed the Strait of Hormuz in response to continued Israeli military strikes in Lebanon; the U.S. said it remains open.",
       "insight": ""
     },
     {
