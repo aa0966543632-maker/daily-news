@@ -4,12 +4,12 @@
 流程：
   1. 從 sources.py 的 RSS 來源抓取最新新聞
   2. 依「分類 × 地區」分桶、去重、取最新 N 則
-  3. 呼叫 Gemini API 產生繁體中文摘要與一句 insight
+  3. 呼叫 Groq API 產生繁體中文摘要與一句 insight
   4. 寫出 data/latest.json 與 data/YYYY-MM-DD.json（台灣日期）
 
 環境變數：
-  GEMINI_API_KEY  必填，從 Google AI Studio 取得
-  GEMINI_MODEL    選填，預設 gemini-2.5-flash
+  GROQ_API_KEY  必填，從 console.groq.com 取得
+  GROQ_MODEL    選填，預設 llama-3.3-70b-versatile
 """
 
 import hashlib
@@ -28,9 +28,8 @@ import feedparser
 from sources import FEEDS, MAX_PER_BUCKET
 
 # ───────────────────────── 設定 ─────────────────────────
-# gemini-2.0-flash 免費版每日額度遠高於 2.5-flash（後者免費版每日僅 20 次）
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
-BATCH_SIZE = int(os.environ.get("GEMINI_BATCH_SIZE", "6"))  # 每次請求處理幾篇（壓低用量）
+MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+BATCH_SIZE = int(os.environ.get("GROQ_BATCH_SIZE", "6"))  # 每次請求處理幾篇
 TAIPEI = timezone(timedelta(hours=8))
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -138,15 +137,15 @@ def parse_json_array(text: str):
     return json.loads(match.group(0))
 
 
-def enrich_with_gemini(items):
-    from google import genai
+def enrich_with_groq(items):
+    from groq import Groq
 
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        print("ERROR: 環境變數 GEMINI_API_KEY 未設定", file=sys.stderr)
+        print("ERROR: 環境變數 GROQ_API_KEY 未設定", file=sys.stderr)
         sys.exit(1)
 
-    client = genai.Client(api_key=api_key)
+    client = Groq(api_key=api_key)
 
     # 先填 fallback，確保即使某批失敗每篇仍有摘要
     for item in items:
@@ -155,14 +154,17 @@ def enrich_with_gemini(items):
 
     batches = [items[i:i + BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
     for bi, batch in enumerate(batches, 1):
-        print(f"[gemini 批次 {bi}/{len(batches)}] {len(batch)} 篇 … ", end="", flush=True)
+        print(f"[groq 批次 {bi}/{len(batches)}] {len(batch)} 篇 … ", end="", flush=True)
         for attempt in range(4):
             try:
-                resp = client.models.generate_content(
+                resp = client.chat.completions.create(
                     model=MODEL,
-                    contents=build_batch_prompt(batch),
+                    messages=[{"role": "user", "content": build_batch_prompt(batch)}],
+                    temperature=0.3,
+                    max_tokens=2048,
                 )
-                arr = parse_json_array(resp.text)
+                text = resp.choices[0].message.content
+                arr = parse_json_array(text)
                 # 以 id 對應（容忍字串 id）；缺 id 時退而用「順序」對應
                 by_id = {}
                 for x in arr:
@@ -186,7 +188,7 @@ def enrich_with_gemini(items):
                         item["insight"] = insight
                         filled += 1
                 if filled == 0:
-                    snippet = (resp.text or "").strip().replace("\n", " ")[:200]
+                    snippet = (text or "").strip().replace("\n", " ")[:200]
                     print(f"\n  ⚠ 未解析出 insight，回應片段：{snippet!r}")
                 print(f"ok（{filled}/{len(batch)} 則有 insight）")
                 break
@@ -194,8 +196,8 @@ def enrich_with_gemini(items):
                 if attempt == 3:
                     print(f"fallback ({exc})")
                 else:
-                    time.sleep(5 * (attempt + 1))  # 5/10/15s backoff，避開每分鐘限額
-        time.sleep(2)  # 批次間稍作間隔，進一步降低 RPM 壓力
+                    time.sleep(5 * (attempt + 1))  # 5/10/15s backoff
+        time.sleep(2)  # 批次間稍作間隔
 
     for item in items:
         item.pop("raw", None)
@@ -225,7 +227,7 @@ def main():
         print("沒有抓到任何新聞，結束。", file=sys.stderr)
         sys.exit(1)
     items.sort(key=lambda x: x["published"], reverse=True)
-    items = enrich_with_gemini(items)
+    items = enrich_with_groq(items)
     write_output(items)
     print(f"完成，共 {len(items)} 則。")
 
